@@ -1,0 +1,12 @@
+quartz:
+  enabled: true
+server:
+  port: 9094
+spring:
+  application:
+    name: Spring-Quartz-Scheduler                                       #Quartz调度中心
+  datasource:
+    url: jdbc:mysql://localhost:3306/travel?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver

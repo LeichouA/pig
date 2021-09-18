@@ -1,0 +1,40 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.master",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.manager.config.DataSourceConfiguration",
+      "sourceMethod": "masterDataSource()"
+    },
+    {
+      "name": "spring.datasource.slave",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.manager.config.DataSourceConfiguration",
+      "sourceMethod": "slaveDataSource()"
+    },
+    {
+      "name": "spring.redis",
+      "type": "com.manager.config.redis.RedisConfigProperties",
+      "sourceType": "com.manager.config.redis.RedisConfigProperties"
+    },
+    {
+      "name": "spring.redis.cluster",
+      "type": "com.manager.config.redis.RedisConfigProperties$cluster",
+      "sourceType": "com.manager.config.redis.RedisConfigProperties",
+      "sourceMethod": "getCluster()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis.cluster.nodes",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.manager.config.redis.RedisConfigProperties$cluster"
+    },
+    {
+      "name": "spring.redis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.manager.config.redis.RedisConfigProperties"
+    }
+  ],
+  "hints": []
+}
